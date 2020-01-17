@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './search.module.css';
 import PropTypes from 'prop-types';
 
@@ -8,7 +8,7 @@ interface SearchProps {
 	podcastInput: string;
 }
 
-const Search: React.FunctionComponent<SearchProps> = ({ onSubmit, onChange, podcastInput }) => {
+const Search: FC<SearchProps> = ({ onSubmit, onChange, podcastInput }) => {
 	return (
 		<section id="search" className={styles.searchSection}>
 			<div className="wrapper">

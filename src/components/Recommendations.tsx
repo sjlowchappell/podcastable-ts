@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Card from './Card';
 import PropTypes from 'prop-types';
 
@@ -22,12 +22,7 @@ interface RecomProps {
 	handleClick: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-const Recommendations: React.FunctionComponent<RecomProps> = ({
-	searchedPodcast,
-	recommendationsList,
-	emptyResults,
-	handleClick,
-}) => {
+const Recommendations: FC<RecomProps> = ({ searchedPodcast, recommendationsList, emptyResults, handleClick }) => {
 	return (
 		<section id="results">
 			<div className="wrapper">

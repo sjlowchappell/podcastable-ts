@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './footer.module.css';
 import apiLogo from '../assets/api-logo.png';
 
-const Footer = () => {
+const Footer: FC = () => {
 	return (
 		<footer>
 			<div className="wrapper">

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './loadingCircle.module.css';
 
-const LoadingCircle = () => {
+const LoadingCircle: FC = () => {
 	return (
 		<div className={styles.ldsRing}>
 			<div className={styles.loaderDiv}></div>
