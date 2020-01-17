@@ -21,7 +21,7 @@ interface CardProps {
 }
 
 class Card extends Component<CardProps, CardState> {
-	public static propTypes = {
+	static propTypes = {
 		podcast: PropTypes.object.isRequired,
 	};
 	constructor(props: CardProps) {
