@@ -4,7 +4,7 @@ import apiLogo from '../assets/api-logo.png';
 
 const Footer: FC = () => {
 	return (
-		<footer>
+		<footer className={styles.footer}>
 			<div className="wrapper">
 				<a href="https://www.listennotes.com/api/docs/" className={styles.apiLogo}>
 					<img src={apiLogo} alt="Listen Notes API Logo: Powered by Listen Notes" />

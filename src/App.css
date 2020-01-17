@@ -215,6 +215,7 @@ html {
 
 .App {
 	font-family: 'Roboto', sans-serif;
+	text-align: center;
 }
 
 .wrapper {
@@ -226,13 +227,6 @@ html {
 img {
 	max-width: 100%;
 	display: block;
-}
-
-main {
-	text-align: center;
-}
-main section {
-	text-align: left;
 }
 
 /* TYPOGRAPHY */
@@ -274,11 +268,6 @@ a {
 
 a:hover {
 	color: #501b1d;
-}
-
-.centerText {
-	text-align: center;
-	padding: 30px 0px;
 }
 
 /* Button styling */

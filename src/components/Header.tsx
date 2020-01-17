@@ -3,7 +3,7 @@ import styles from './header.module.css';
 
 const Header: FC = () => {
 	return (
-		<header>
+		<header className={styles.header}>
 			<div className="wrapper">
 				<h1>Podcastable</h1>
 				<p className={styles.subtitle}>Listen to more of what you love.</p>

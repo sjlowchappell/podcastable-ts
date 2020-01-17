@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import Card from './Card';
 import PropTypes from 'prop-types';
+import styles from './recommendations.module.css';
 
 interface SearchedPodcast {
 	title_original?: string;
@@ -27,7 +28,7 @@ const Recommendations: FC<RecomProps> = ({ searchedPodcast, recommendationsList,
 		<section id="results">
 			<div className="wrapper">
 				{emptyResults ? (
-					<p className="centerText">
+					<p className={styles.paddedText}>
 						Sorry! We couldn't find recommendations for that search. Please try again.
 					</p>
 				) : (
@@ -40,7 +41,7 @@ const Recommendations: FC<RecomProps> = ({ searchedPodcast, recommendationsList,
 						</ul>
 					</>
 				)}
-				<div className="centerText">
+				<div className={styles.paddedText}>
 					<a href="#search" onClick={handleClick} className="button">
 						Start Over
 					</a>

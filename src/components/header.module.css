@@ -1,6 +1,5 @@
-header {
+.header {
 	height: 100vh;
-	text-align: center;
 	background: url(../assets/rsz_matt-botsford-197870-unsplash.jpg);
 	background-color: #64485c;
 	background-repeat: no-repeat;
@@ -67,6 +66,6 @@ header {
 
 @media (max-width: 400px) {
 	h1 {
-		font-size: 4rem;
+		font-size: 3.5rem;
 	}
 }
