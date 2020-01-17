@@ -39,24 +39,24 @@ class Card extends Component<CardProps, CardState> {
 		if (this.state.description === 'closed') {
 			return (
 				<>
-					<p className="descriptionClosed">
+					<p className={styles.descriptionClosed}>
 						{/* regex included here because description is sometimes encapsulated in HTML tags and entities. */}
 						{podcastDescription}
 					</p>
 					<button className={styles.cardDescriptionExpandButton} onClick={this.expandDescription}>
-						<img className="svgIcon" src={plusIcon} alt="Expand Description" />
+						<img className={styles.svgIcon} src={plusIcon} alt="Expand Description" />
 					</button>
 				</>
 			);
 		} else {
 			return (
 				<>
-					<p className="descriptionOpen">
+					<p>
 						{/* regex included here because description is sometimes encapsulated in HTML tags and entities. */}
 						{podcastDescription}
 					</p>
 					<button className={styles.cardDescriptionExpandButton} onClick={this.expandDescription}>
-						<img className="svgIcon" src={minusIcon} alt="Collapse Description" />
+						<img className={styles.svgIcon} src={minusIcon} alt="Collapse Description" />
 					</button>
 				</>
 			);
@@ -84,7 +84,7 @@ class Card extends Component<CardProps, CardState> {
 					{podcastDescription.length > 175 ? (
 						this.largeDescription(podcastDescription)
 					) : (
-						<p className="descriptionClosed">{podcastDescription}</p>
+						<p className={styles.descriptionClosed}>{podcastDescription}</p>
 					)}
 				</div>
 			</li>

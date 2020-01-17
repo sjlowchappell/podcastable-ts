@@ -66,6 +66,22 @@
 		contrast(94%);
 }
 
+.descriptionClosed {
+	overflow: hidden;
+	height: 70px;
+}
+
+.svgIcon {
+	filter: invert(100%) sepia(94%) saturate(0%) hue-rotate(194deg) brightness(105%) contrast(105%);
+}
+
+@media (max-width: 800px) {
+	.descriptionClosed {
+		overflow: hidden;
+		height: 90px;
+	}
+}
+
 @media (max-width: 600px) {
 	.cardHeading {
 		flex-direction: column;
@@ -79,5 +95,19 @@
 	}
 	.cardDescription p {
 		margin-top: auto;
+	}
+}
+
+@media (max-width: 550px) {
+	.descriptionClosed {
+		overflow: hidden;
+		height: 130px;
+	}
+}
+
+@media (max-width: 450px) {
+	.descriptionClosed {
+		overflow: hidden;
+		height: 160px;
 	}
 }
