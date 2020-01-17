@@ -55,8 +55,8 @@ class App extends Component<AppProps, AppState> {
 	// When user types into search box, state is updated with new value
 	handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		this.setState({
-			[e.target.name]: e.target.value,
-		} as any);
+			podcastInput: e.target.value,
+		});
 	};
 
 	resetButton = () => {
