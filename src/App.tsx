@@ -7,10 +7,19 @@ import Search from './components/Search';
 import Recommendations from './components/Recommendations';
 import LoadingCircle from './components/LoadingCircle';
 
+interface Recommendation {
+	id: string;
+	website: string;
+	image: string;
+	title: string;
+	publisher: string;
+	description: string;
+}
+
 interface AppState {
 	podcastInput: string;
 	searchedPodcast: object;
-	recommendationsList: object[];
+	recommendationsList: Recommendation[];
 	emptyResults: boolean;
 	isSubmitted: boolean;
 }

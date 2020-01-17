@@ -17,7 +17,7 @@ interface Recommendation {
 
 interface RecomProps {
 	searchedPodcast: SearchedPodcast;
-	recommendationsList: Array<any>;
+	recommendationsList: Recommendation[];
 	emptyResults: boolean;
 	handleClick: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
