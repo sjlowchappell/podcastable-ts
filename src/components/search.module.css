@@ -1,0 +1,20 @@
+.searchSection {
+	text-align: center;
+	padding: 10vh 0px;
+}
+
+.podSVG {
+	width: 100px;
+	fill: white;
+}
+
+.formContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.formInput,
+.description {
+	margin: 40px auto;
+	padding: 5px;
+}
