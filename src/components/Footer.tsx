@@ -10,8 +10,7 @@ const Footer: FC = () => {
 					<img src={apiLogo} alt="Listen Notes API Logo: Powered by Listen Notes" />
 				</a>
 				<p>
-					© {new Date().getFullYear()} designed and built by{' '}
-					<a className={styles.nameLink} href="https://samlow-chappell.com">
+					© {new Date().getFullYear()} <a className={styles.nameLink} href="https://samlow-chappell.com">
 						Sam Low-Chappell
 					</a>
 				</p>
